@@ -13,6 +13,34 @@
            Upon submitting the form, you should simply print the Value of the Form to the Console.
            Optionally, display it in your template.
       -->
+      <form>
+        <div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subscriptions">Subscriptions</label>
+          <select
+            id="subscriptions"
+            class="form-control"
+            [ngModel]="defaultQuestion"
+            name="subscriptions"
+          >
+            <option value="basic">Basic</option>
+            <option value="advanced">Advanced</option>
+            <option value="pro">Pro</option>
+          </select>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+      </form>
     </div>
   </div>
 </div>
