@@ -13,7 +13,8 @@
            Upon submitting the form, you should simply print the Value of the Form to the Console.
            Optionally, display it in your template.
       -->
-      <form>
+      <!-- ngSubmit is used for submiting the form -->
+      <form (ngSubmit)="onSubmit()" #f="ngForm">
         <div>
           <div class="form-group">
             <label for="email">Email</label>
