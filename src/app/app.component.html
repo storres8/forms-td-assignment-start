@@ -28,16 +28,21 @@
         </div>
         <div class="form-group">
           <label for="subscriptions">Subscriptions</label>
-          <select
-            id="subscriptions"
-            class="form-control"
-            [ngModel]="defaultQuestion"
-            name="subscriptions"
-          >
+          <select id="subscriptions" class="form-control" name="subscriptions">
             <option value="basic">Basic</option>
             <option value="advanced">Advanced</option>
             <option value="pro">Pro</option>
           </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="text"
+            id="password"
+            class="form-control"
+            name="password"
+            required
+          />
         </div>
         <button class="btn btn-primary">Submit</button>
       </form>
