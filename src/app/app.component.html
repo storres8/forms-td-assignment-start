@@ -24,15 +24,21 @@
               class="form-control"
               name="email"
               required
+              ngModel
             />
           </div>
         </div>
         <div class="form-group">
           <label for="subscriptions">Subscriptions</label>
-          <select id="subscriptions" class="form-control" name="subscriptions">
-            <option value="basic">Basic</option>
-            <option value="advanced">Advanced</option>
-            <option value="pro">Pro</option>
+          <select
+            id="subscriptions"
+            class="form-control"
+            name="subscriptions"
+            ngModel
+          >
+            <option value="Basic">Basic</option>
+            <option value="Advanced">Advanced</option>
+            <option value="Pro">Pro</option>
           </select>
         </div>
         <div class="form-group">
@@ -43,6 +49,7 @@
             class="form-control"
             name="password"
             required
+            ngModel
           />
         </div>
         <button class="btn btn-primary">Submit</button>

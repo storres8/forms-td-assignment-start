@@ -8,6 +8,7 @@ import { NgForm } from "@angular/forms";
 })
 export class AppComponent {
   @ViewChild("f", { static: false }) signupForm: NgForm;
+  defaultSub: "Advanced";
 
   onSubmit() {
     console.log(this.signupForm);
